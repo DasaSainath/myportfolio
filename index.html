@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dasa Sainath Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #0e0e0e;
+}
+
+.hero-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Left Image Block */
+.hero-image-container {
+  flex: 1;
+  background-image: url('images/your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Right Text Block */
+.hero-content {
+  flex: 1;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.hero-text-block {
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #f39c12;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #f39c12;
+}
+
+.hero-typing {
+  font-size: 1.5rem;
+  color: #ffffff;
+  height: 2rem;
+  margin-bottom: 10px;
+  border-right: 3px solid #f39c12;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #white;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #d68910;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #f39c12;
+  border: 1px solid #f39c12;
+}
+
+.secondary-btn:hover {
+  background-color: #f39c12;
+  color: white;
+}
+
+.typing-container {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #f5a623;
+   font-family: 'Courier New', monospace;
+   display: inline-block;
+ }
+
+ .blinking-cursor {
+   display: inline-block;
+   width: 8px;
+   height: 24px;
+   background-color: #f5a623;
+   margin-left: 4px;
+   animation: blink 0.8s step-start infinite;
+ }
+
+ @keyframes blink {
+   50% {
+     opacity: 0;
+   }
+ }
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">My Portfolio</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#Experience-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <section class="hero-section">
+  <div class="hero-wrapper">
+  
+
+    <div class="hero-content">
+      <div class="hero-text-block">
+        <span class="hero-subtitle">Hello!</span>
+        <h1 class="hero-title">I'm <span class="highlight">Dasa Sainath</span></h1>
+
+        <!-- Typing Animation -->
+        <div class="typing-container">
+  <span id="hero-typing"></span>
+  <span class="blinking-cursor"></span>
+</div>
+        <br>
+
+        <h2 class="hero-description">"Turning Data into Decisions | Analytical Insights for Smarter Solutions"</h2>
+
+        <div class="hero-buttons">
+          <a href="https://www.linkedin.com/in/sainath-dasa-852747136/" class="hero-btn primary-btn" target="_blank"><b>LinkedIn</b></a>
+          <a href="https://github.com/DasaSainath" class="hero-btn secondary-btn" target="_blank"><b>My Works</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const typingElement = document.getElementById('hero-typing');
+  const roles = ['Data Analyst', 'Data Engineering', 'ML Engineer', 'Researcher'];
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function updateText() {
+    const currentRole = roles[roleIndex];
+    typingElement.textContent = currentRole.substring(0, charIndex);
+
+    if (!isDeleting && charIndex < currentRole.length) {
+      charIndex++;
+      setTimeout(updateText, 150);
+    } else if (isDeleting && charIndex > 0) {
+      charIndex--;
+      setTimeout(updateText, 100);
+    } else {
+      // Toggle between typing and deleting
+      isDeleting = !isDeleting;
+
+      // Move to the next role only when deletion is complete
+      if (!isDeleting) {
+        roleIndex = (roleIndex + 1) % roles.length;
+      }
+
+      setTimeout(updateText, isDeleting ? 800 : 1500); // Pause before deleting or moving to the next role
+    }
+  }
+
+  updateText();
+</script>
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/your-image.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Dasa Sainath</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst/Engineering</span></p>
+										<p><span class="title-s"> </span> <span>Hands-on experience delivering real-world data solutions and insights.</span></p>
+										<p><span class="title-s">Address: </span> <span>Delaware, United States</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>PYTHON</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Data Visualization</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Statistical Analysis</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Machine Learning</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>I am a Data Analyst and Machine Learning Engineer with a strong foundation in statistical analysis, data modeling, and AI-driven solutions. With experience at Capgemini and Amazon, I have worked on projects involving Advanced Driver Assistance Systems (ADAS), NLP-based sentiment analysis, and predictive modeling for business insights. My expertise includes Python, SQL, Tableau, and AWS, along with frameworks like TensorFlow, Scikit-learn, and PyTorch. I specialize in transforming raw data into actionable insights, optimizing machine learning pipelines, and enhancing data-driven decision-making. Passionate about data science, I continuously explore innovations in AI, deep learning, and business analytics to solve real-world challenges.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Analyst & Machine Learning Engineer with expertise in data modeling, statistical analysis, and AI-driven solutions. &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span> Retail, E-commerce, AI/ML, Digital Marketing, Data Analytics.</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master's in Information Systems & Technologies</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Telugu</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Tableau, Power BI, Excel.</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span> Python, SQL, R, AWS, Apache Spark, TensorFlow, Scikit-learn, Machine Learning, Data Visualization. &amp; </span></li>
+									<li class="d-flex"><span>Interest:</span> <span> AI & ML innovations, trekking, traveling, and mentoring.</span></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Proficient in developing predictive models and creating data visualizations that enhance
+				business strategies and processes. Adept at turning complex datasets into actionable insights with a
+				strong foundation in statistical analysis and AI technologies.
+				.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Certification</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span></span>
+						<h2><a href="https://www.udemy.com/certificate/UC-6dd7802e-73c6-437b-87f7-1c408e22588e/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com">Python for Data Science & Machine Learning Bootcamp</a></h2>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span></span>
+						<h2><a href="https://drive.google.com/file/d/16KKDIXlOE6oAaBT998ovqaj90JUza6uc/view">Data analysis using Excel</a></h2>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span></span>
+						<h2><a href="https://www.linkedin.com/learning/certificates/fbba027e141c161fe84dcf989d8b4d9681db830d90a0cddf213d1f3563271c8d?trk=share_certificate">Digital Marketing</a></h2>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span></span>
+						<h2><a href="https://www.linkedin.com/learning/certificates/fa52c4273ed4bdc384113540f09a196200879e1615d7c0305a445fcd97982250"> Agile Foundations </a></h2>
+
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2025</span>
+    					<h2>Masters in Information System Technologies</h2>
+    					<span class="position">Wilimington University DE , USA</span>
+    					<p class="mt-4">GPA: 3.8/4</p>
+    				</div>
+    			</div>
+          <div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2021</span>
+    					<h2>Masters Of Science (Applied Statistics)</h2>
+    					<span class="position">Hindi Mahavidyalaya College, Hyd , India</span>
+    					<p class="mt-4">GPA: 3.2/4</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016-2019</span>
+    					<h2>Bachelors of Science in Computer science and Statistics
+						</h2>
+    					<span class="position">Badruka, Osmania University, Hyd, India</span>
+    					<p class="mt-4">GPA: 3.8/4</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="" class="btn btn-primary py-4 px-5">Download Resume</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="ftco-section" id="Experience-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Experience</h1>
+            <h2 class="mb-4">Professional Experience</h2>
+          </div>
+        </div>
+        
+        <div class="row d-flex">
+          <!-- Amazon Experience -->
+          <div class="col-md-8 mx-auto d-flex ftco-animate">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/amazon.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading text-center">
+                  <a href="#">Amazon India Private Limited | Data Analyst | July 2019 - April 2022</a>
+                </h3>
+                <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+                  <li>Proficient in text annotations, creating bounding boxes and attributes for invoices, purchase orders, documents, and cheques.</li>
+                  <li>Ensured high-quality dataset preprocessing, enhancing accuracy for machine learning models.</li>
+                  <li>Experienced in labeling and annotating text for NLP tasks.</li>
+                  <li>Worked on object detection projects, contributing to AI/ML model training.</li>
+                  <li>Deployed ML models using Flask and AWS SageMaker, improving real-time inference by 20%.</li>
+                  <li>Expertise in Textract, including transcription, segmentation, and bounding box annotation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Capgemini Experience -->
+          <div class="col-md-8 mx-auto d-flex ftco-animate">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/capgemini.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading text-center">
+                  <a href="#">Capgemini India Private Limited | Quality Analyst | April 2022 - July 2023</a>
+                </h3>
+                <ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+                  <li>Built machine learning models for Advanced Driver Assistance Systems (ADAS).</li>
+                  <li>Managed text, image, audio, and video annotations, ensuring precise AI model training.</li>
+                  <li>Utilized AWS (S3, Lambda, EC2) and Google BigQuery to improve data pipeline efficiency by 30%.</li>
+                  <li>Performed exploratory data analysis (EDA) using Python (Pandas, Matplotlib, Seaborn).</li>
+                  <li>Evaluated algorithm performance in Jupyter Notebook using scikit-learn, NumPy, and Matplotlib.</li>
+                  <li>Applied statistical methods to extract insights, enhancing decision-making.</li>
+                  <li>Designed data visualization dashboards with pivot tables for effective reporting.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+ 
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/DasaSainath/2-Amazon-Alexa-Product-Review" class="block-20 zoom-effect" style="background-image: url('images/amazon alexa.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href=https://github.com/DasaSainath/2-Amazon-Alexa-Product-Review>Amazon Alexa Reviews Analysis – Unlocking Customer Insights with NLP</a></h3>
+                <p>Our Amazon Alexa Reviews Analysis project uses Natural Language Processing (NLP) to analyze customer feedback, classify sentiments, and extract key insights to improve product quality.
+
+                  We clean and preprocess text data, perform Exploratory Data Analysis (EDA) to visualize trends, and apply machine learning models like Naïve Bayes, Random Forest, and LSTM for sentiment classification.
+                  
+                  Built with Python, Pandas, NumPy, NLTK, SpaCy, Scikit-learn, and TensorFlow, the project ensures accurate sentiment analysis with data visualization using Matplotlib and Seaborn.
+                  
+                  Future improvements include real-time sentiment analysis with Flask/Streamlit and advanced NLP models like BERT/GPT for better accuracy.
+                  
+                  This project helps businesses understand customer sentiment, enhance user experience, and drive data-driven decisions.
+
+Key Skills: Python · Deep Learning · Neural Networks · Optimization</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/zomato rating.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Zomato Rating Prediction Using Machine Learning </a></h3>
+                <p>Our Zomato Rating Prediction project uses Machine Learning (ML) to predict restaurant ratings based on user inputs. A Flask web app allows users to enter restaurant details and receive dynamic predictions.
+
+                  We preprocess data, perform Exploratory Data Analysis (EDA), and train models using Pandas, NumPy, and Scikit-learn. The ML model is optimized and deployed with Flask and Pickle for real-time predictions.
+                  
+                  The web app features a user-friendly HTML, CSS, and JavaScript interface, providing instant rating forecasts. Future improvements include deep learning integration for enhanced accuracy.
+                  
+                  This project helps businesses analyze customer preferences and optimize service quality.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/DasaSainath/1-Car-Prediction-Machine-Learning" class="block-20 zoom-effect" style="background-image: url('images/car pred.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/DasaSainath/1-Car-Prediction-Machine-Learning">Car Price Prediction Using Machine Learning</a></h3>
+                <p>Our Car Price Prediction project uses Machine Learning (ML) to estimate the selling price of used cars based on historical data. It involves data preprocessing, feature engineering, and model training for accurate price prediction.
+
+                  We clean and prepare data, perform Exploratory Data Analysis (EDA), and encode categorical variables for better model performance. Features like Year, Present Price, Kilometers Driven, Fuel Type, and Ownership History are analyzed.
+                  
+                  Using Linear Regression, Decision Tree, and Random Forest, we train and optimize models with hyperparameter tuning and evaluate performance using R² score, RMSE, and MAE.
+                  
+                  A Flask/Streamlit web app will be developed for real-time price prediction. Future improvements include adding more features to enhance accuracy.
+                  
+                  This project helps users make informed decisions when buying or selling used cars based on data-driven insights..
+
+Key Skills: Tableau · Data Visualization · Dashboards</p>
+              </div>
+            </div>
+          </div>
+         <!-- <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/shivakarthik09/Bias-Detection-in-Large-Language-Models-LLMs-" class="block-20 zoom-effect" style="background-image: url('images/bias_detection_and_mitigation_llm_visual.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shivakarthik09/Bias-Detection-in-Large-Language-Models-LLMs-">Bias Detection and Mitigation in LLM-Generated Text</a></h3>
+                <p>Built a system to detect and visualize demographic biases (gender, race, age, socioeconomic) in LLM-generated text, enhancing model trustworthiness. Applied AIF360 and FairSeq to evaluate GPT-2, BERT, and other models. Conducted multilingual bias analysis, emphasizing Indian languages for cultural fairness in NLP.
+
+Key Skills: Bias Detection · NLP · Fairness in AI · GPT-2 · BERT · AIF360 · FairSeq · Multilingual Analysis</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/airline_performance_analysis_big_data.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Airline Performance Analysis Leveraging Big Data</a></h3>
+                <p>Configured a 4-node EC2 cluster for scalable cloud data processing. Built a MapReduce application to analyze flight data (1987–2008), identifying top airlines by on-time performance. Automated workflows using Oozie, optimizing distributed data processing.
+
+Key Skills: Big Data · AWS EC2 · Hadoop · MapReduce · Oozie · Cloud Computing · Data Engineering · Flight Analytics</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/shivakarthik09/DMSD-CS631" class="block-20 zoom-effect" style="background-image: url('images/city_library_database_design_management.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shivakarthik09/DMSD-CS631">City Library Database Design and Management</a></h3>
+                <p>Designed and deployed a library management database using ER modeling and SQL, enhancing data retrieval and system performance. Built the system with MySQL, PHP, and XAMPP, ensuring seamless integration and data integrity.
+
+Key Skills: Database Design · SQL · MySQL · ER Modeling · XAMPP · PHP · Data Integrity · Software Development</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/shivakarthik09/Webscraping-Data-analysis" class="block-20 zoom-effect" style="background-image: url('images/used_cars_market_analysis_web_scraping.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shivakarthik09/Webscraping-Data-analysis">Data Analysis and Web Scraping for Used Cars Market Insights</a></h3>
+                <p>Scraped automotive data from Cars24 using BeautifulSoup and Requests, cleaned and analyzed market trends with EDA. Visualized key insights using Matplotlib and Seaborn, helping optimize dealer pricing strategies and enhance customer decision-making.
+
+Key Skills: Web Scraping · EDA · BeautifulSoup · Python · Data Visualization · Market Analysis · Data Cleaning</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/shivakarthik09/CS-643-Cloud-Computing-wineprediction-" class="block-20 zoom-effect" style="background-image: url('images/wine_quality_prediction_spark_aws_docker.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shivakarthik09/CS-643-Cloud-Computing-wineprediction-">Wine Quality Prediction using Spark and Docker Deployment on AWS</a></h3>
+                <p>Configured a 4-node EC2 Spark cluster on AWS for distributed data processing and parallel model training, achieving an F1 score of 0.77. Containerized the application using Docker, reducing deployment time by 40%. Utilized S3 for data storage and integrated Java for performance optimization.
+
+Key Skills: Apache Spark · AWS EC2 · Docker · S3 · Java · Distributed Computing · Model Training · Data Preprocessing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/shivakarthik09/AWS-Image-Recognition-Pipeline-" class="block-20 zoom-effect" style="background-image: url('images/aws_cloud_image_recognition_pipeline.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shivakarthik09/AWS-Image-Recognition-Pipeline-">AWS Cloud-Based Image Recognition System</a></h3>
+                <p>Developed a scalable image recognition pipeline leveraging AWS services like S3, SQS, Lambda, and Rekognition, enabling automated object detection and image captioning with 90%+ accuracy. Optimized parallel processing using dual EC2 instances, improving workload distribution and reducing image processing time by 2 seconds per image, enhancing efficiency and scalability for large datasets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/shivakarthik09/Sentiment-Analysis-on-Amazon-Product-Reviews" class="block-20 zoom-effect" style="background-image: url('images/sentiment_analysis_amazon_reviews.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shivakarthik09/Sentiment-Analysis-on-Amazon-Product-Reviews">Sentiment Analysis on Amazon Product Review</a></h3>
+                <p>Built an end-to-end sentiment analysis system on Amazon product reviews using NLP and machine learning techniques. Extracted and cleaned large-scale review data, applied text preprocessing (tokenization, stopwords removal, stemming, lemmatization), and transformed text into features using BOW and TF-IDF. Trained Logistic Regression and Decision Tree models, achieving up to 75% accuracy. Deployed a review prediction tool with user input functionality, enabling real-time sentiment classification. Technologies: Python, Scikit-learn, NLTK, Pandas, Joblib</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<!-- <div class="row d-flex justify-content-center">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+
+				  <h3 class="heading"><a href="https:/n">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+
+				  <h3 class="heading"><a href="">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div> -->
+    </section>-->
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="50">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/DasaSainath" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>DE, United States</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://2036069535">+1 203-606-9535</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="jadhavshree006@gmail.com">Sainath.unf219@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="">Link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<!-- <h2>Have a<span> Question?  </span> <a href="" class="btn btn-primary py-3 px-5">Click Here</a> </h2> -->
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href=""><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sainath-dasa-852747136/"><span class="icon-linkedin"></span></a></li>
+					  <!-- <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li> -->
+				      <li class="ftco-animate"><a href="https://www.linkedin.com/in/sainath-dasa-852747136/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+
+
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+
+		      </p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
