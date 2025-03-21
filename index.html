@@ -30,6 +30,7 @@
 //--//-->   ABOUT
 ======================================*/
 
+/* About Section */
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -43,63 +44,45 @@
   margin-left: 10px;
 }
 
-
+/* Skills Progress Bar */
 .skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
+  margin: 0.5rem 0 1.2rem 0;
   border-radius: 0;
-  height: .7rem;
+  height: 0.7rem;
 }
 
 .skill-mf .progress .progress-bar {
-  height: .7rem;
+  height: 0.7rem;
   background-color: #ffbd39;
 }
 
-
-/* Animation styles */
+/* Typing Animation */
 #typing-animation {
-  position: relative;
+  display: inline-block;
   font-size: 30px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
+  animation: typing 3s steps(20, end) infinite alternate;
 }
 
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
+#typing-animation::after {
+  content: "|"; /* Cursor Effect */
+  display: inline-block;
+  animation: blink 0.6s step-start infinite;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
-
-/* project image zoom effect */
-
+/* Project Image Zoom Effect */
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;
@@ -109,11 +92,14 @@
   transform: scale(1.1);
 }
 
-/* General Reset */
+/* Reset Defaults */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'Arial', sans-serif;
 }
@@ -190,17 +176,15 @@ body, html {
   overflow: hidden;
 }
 
+/* Fix Hero Description */
 .hero-description {
   font-size: 1rem;
-<<<<<<< HEAD
-  color: #white;
-=======
   color: white;
->>>>>>> 18e4092 (Initial commit)
   margin-bottom: 30px;
   line-height: 1.5;
 }
 
+/* Hero Buttons */
 .hero-buttons {
   display: flex;
   gap: 15px;
@@ -236,28 +220,30 @@ body, html {
   color: white;
 }
 
+/* Typing Effect Container */
 .typing-container {
-   font-size: 1.5rem;
-   font-weight: bold;
-   color: #f5a623;
-   font-family: 'Courier New', monospace;
-   display: inline-block;
- }
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5a623;
+  font-family: 'Courier New', monospace;
+  display: inline-block;
+}
 
- .blinking-cursor {
-   display: inline-block;
-   width: 8px;
-   height: 24px;
-   background-color: #f5a623;
-   margin-left: 4px;
-   animation: blink 0.8s step-start infinite;
- }
+.blinking-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 24px;
+  background-color: #f5a623;
+  margin-left: 4px;
+  animation: blink 0.8s step-start infinite;
+}
 
- @keyframes blink {
-   50% {
-     opacity: 0;
-   }
- }
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 
 </style>
 
